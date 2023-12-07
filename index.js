@@ -11,7 +11,9 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin:
-      process.env.NODE_ENV === "production" ? [""] : ["http://localhost:3000"],
+      process.env.NODE_ENV === "production"
+        ? ["https://chat-app-frontend-taher2512.vercel.app/"]
+        : ["http://localhost:3000"],
   },
 });
 
