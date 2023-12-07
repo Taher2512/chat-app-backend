@@ -13,7 +13,7 @@ const io = new Server(server, {
     origin:
       process.env.NODE_ENV === "production"
         ? [
-            "https://chat-app-frontend-taher2512.vercel.app/",
+            "https://chat-app-frontend-taher2512.vercel.app",
             "http://localhost:3000",
           ]
         : ["http://localhost:3000"],
